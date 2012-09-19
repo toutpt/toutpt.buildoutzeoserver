@@ -1,0 +1,5 @@
+1.0 (unreleased)
+----------------
+
+* add zeoserver configuration with backup
+* add buildout for zope 2.13 pinned
