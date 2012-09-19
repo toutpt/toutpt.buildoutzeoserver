@@ -9,15 +9,21 @@ zeoserver outside of the project.
 How to use
 ==========
 
+configure your environement by copy/paste buildout.cfg.in to buildout.cfg::
+
+  cp buildout.cfg.in buildout.cfg
+  vim buildout.cfg
+
 bootstrap::
 
-  python bootstrap.py -c buildout-xx.cfg
-  bin/buildout -c buildout-xx.cfg
+  python bootstrap.py
+  bin/buildout
 
 Version supported:
 
 * buildout-2.13.15.cfg for zope2.13.15 database (used by Plone 4.1)
 * buildout-2.13.16.cfg for zope2.13.16 database (used by Plone 4.2)
+
 
 Credits
 =======

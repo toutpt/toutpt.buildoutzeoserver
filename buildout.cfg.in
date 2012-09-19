@@ -1,0 +1,48 @@
+[buildout]
+extends=buildout-2.13.15.cfg
+
+[zeoserver]
+zeo-address=8100
+#effective-user=
+
+file-storage=var/filestorage/Data.fs
+blob-storage=var/blobstorage
+
+pack-days=1
+pack-gc=true
+pack-keep-old=true
+#pack-user=
+#pack-password=
+
+# Monitoring
+#monitor-address
+
+# Performance
+#invalidation-queue-size=100
+
+# Customization
+var=${buildout:directory}/var
+
+
+[backup]
+#http://pypi.python.org/pypi/collective.recipe.backup
+backup_blobs=True
+blob-storage = var/blobstorage
+
+#keep=2
+#keep_blob_days=14
+#location=var/backups
+#blobbackuplocation=var/blobstoragebackups
+
+#datafs=var/filestorage/Data.fs
+#full=
+#snapshotlocation=var/snapshotbackups
+#gzip=true
+#additional_filestorages
+#enable_snapshotrestore=false
+#blobsnapshotlocation=var/blobstoragesnapshots
+#only_blobs=False
+#use_rsync=True
+#pre_command=
+#post_command=
+
